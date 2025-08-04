@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styl.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>!! Welcome to My Portfolio !!</h1>
+        </header>
+<nav id="desktop-nav">
+     <div class="logo"><img src="picture/logo.png"/></div>
+    <ul class="nav-links">
+      <li><a href="#profile">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+<!-- Mobile MENU -->
+   <nav id="mob-nav">
+      <div class="logo"><b><i>Vansh Nagpal</i></b></div>
+      <div class="mob-menu">
+        <div class="mob-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  <!-- PROFILE SECTION -->
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vansh Nagpal</h1>
+      <p class="section__text__p2" id="typing-role"></p>
+      <div class="btn-container">
+        <a href="picture/Resume vansh.pdf" target="_blank"><button class="btn btn-color-2"> Resume</button></a>
+        <a href="https://www.linkedin.com/in/vansh-nagpal-4659322a4/" target="_blank"><button class="btn btn-color-1"><i class="fa-brands fa-linkedin "></i><h4>Linkedin</h4></button></a>
+        <a href="https://github.com/VanshNagpal18" target="_blank"> <button class="btn btn-color-1"><i class="fa-brands fa-github"></i><h4>Github</h4></button></a>
+      </div>
+    </div>
+    <div class="section__pic-container">
+      <img src="picture/p1.jpeg" alt="Profile Picture" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="picture/Vansh Nagpal.jpeg" alt="Vansh Nagpal" />
+    </div>
+    <div class="about-content">
+      <h3>Hi, I'm <span class="highlight">Vansh Nagpal</span> 👋</h3>
+      <p>
+        I’m a Computer Science Engineering student at <strong>Delhi Technical Campus, GGSIPU</strong>,driven by a strong passion for technology and its potential to transform the world. 
+        My academic journey has equipped me with a solid foundation in programming, problem-solving, and system design, while my curiosity pushes me to explore emerging technologies like <strong>artificial intelligence, machine learning, and software development.</strong>
+        <br>
+        <br>
+        I thrive on solving complex challenges and am eager to contribute to projects that push boundaries. 
+        Beyond academics, I enjoy collaborating with peers, learning new skills, and staying updated on tech trends.
+        <!-- with a strong interest in <strong>databases, cybersecurity, and full-stack web development</strong>.
+        I’m passionate about solving real-world problems with clean and scalable solutions.
+      </p> -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / SKILLS -->
+<section id="skills">
+  <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+  <div class="skills-container">
+
+    <!-- Programming Languages -->
+    <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+      <h3>🖥️ Programming Languages</h3>
+      <div class="skill-card">
+        <h4>Java</h4>
+        <div class="progress-bar"><div class="fill">60%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>C/C++</h4>
+        <div class="progress-bar"><div class="fill">75%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>Python</h4>
+        <div class="progress-bar"><div class="fill">50%</div></div>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="skill-group" data-aos="fade-up" data-aos-delay="140">
+      <h3>🌐 Web Development</h3>
+      <div class="skill-card">
+        <h4>HTML</h4>
+        <div class="progress-bar"><div class="fill">95%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>CSS</h4>
+        <div class="progress-bar"><div class="fill">90%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>JavaScript</h4>
+        <div class="progress-bar"><div class="fill">75%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>React.js</h4>
+        <div class="progress-bar"><div class="fill">65%</div></div>
+      </div>
+    </div>
+
+    <!-- Backend & Databases -->
+    <div class="skill-group" data-aos="fade-up" data-aos-delay="180">
+      <h3>🗄️ Backend & Databases</h3>
+      <div class="skill-card">
+        <h4>Node.js</h4>
+        <div class="progress-bar"><div class="fill">70%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>Express.js</h4>
+        <div class="progress-bar"><div class="fill">68%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>MongoDB</h4>
+        <div class="progress-bar"><div class="fill">35%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>MySQL</h4>
+        <div class="progress-bar"><div class="fill">70%</div></div>
+      </div>
+    </div>
+
+    <!-- Tools & Platforms -->
+    <!-- <div class="skill-group" data-aos="fade-up" data-aos-delay="400">
+      <h3>🛠️ Tools & Platforms</h3>
+      <div class="skill-card">
+        <h4>Git & GitHub</h4>
+        <div class="progress-bar"><div class="fill">75%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>Postman</h4>
+        <div class="progress-bar"><div class="fill">70%</div></div>
+      </div>
+      <div class="skill-card">
+        <h4>VS Code</h4>
+        <div class="progress-bar"><div class="fill">90%</div></div>
+      </div>
+    </div>
+
+    Emerging Skills
+    <div class="skill-group" data-aos="fade-up" data-aos-delay="500">
+      <h3>🧠 Emerging Skills</h3>
+      <div class="skill-card">
+        <h4>Artificial Intelligence</h4>
+        <div class="progress-bar"><div class="fill">40%</div></div>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+
+
+
+<section id="projects">
+  <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Givelife -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="picture/Gl.png" alt="Givelife" class="project-img" />
+      <div class="project-info">
+        <h3>GiveLife</h3>
+        <p> A digital platform to streamline organ donor registration and recipient matching, enhancing efficiency in life-saving transplants. </p>
+        <p><strong>Tech:</strong> Java, Html, CSS, JS, MongoDB, flask</p>
+        <div class="project-links">
+          <a href="https://github.com/VanshNagpal18/GiveLife" class="btn">GitHub</a>
+          <a href="vanshnagpal18.github.io/GiveLife/" class="see"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PDA Simulator -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+     <img src="picture/Toc.png" alt="PDA Palindrome Simulator" class="project-img" />
+      <div class="project-info">
+        <h3>PDA Palindrome Simulator</h3>
+        <p>It is a Visual simulator to understand pushdown automata working for palindrome checking. Useful for theory of computation.</p>
+        <p><strong>Tech:</strong>HTML, CSS, JavaScript</p>
+        <div class="project-links">
+          <a href="https://github.com/VanshNagpal18/PDA-simulator-for-palindrome-recognition" class="btn">GitHub</a>
+          <a href="https://vanshnagpal18.github.io/PDA-simulator-for-palindrome-recognition/" class="see"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social media Platform -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="180">
+      <img src="picture/m1.png" alt="Social-Media Platform" class="project-img" />
+      <div class="project-info">
+        <h3>Social-Media Platform</h3>
+        <p>BeSocial is a Social-Media platform inspired by FB, showcasing a responsive user interface for social interaction features like profiles, posts, and messaging.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <div class="project-links">
+          <a href="https://github.com/VanshNagpal18/CodeAlpha_Social_Media_Platform" class="btn">GitHub</a>
+          <a href="https://vanshnagpal18.github.io/CodeAlpha_Social_Media_Platform/" class="see"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expense Tracker -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="picture/tracker.png" alt="Expense Tracker" class="project-img" />
+      <div class="project-info">
+        <h3>SmartSpender</h3>
+        <p>Designed and implemented a responsive website to track and manage personal expenses using HTML, CSS, and JavaScript. Focused on creating an intuitive and user-friendly interface to simplify expense management for users. </p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <div class="project-links">
+          <a href="https://github.com/VanshNagpal18/Expense-calculator-" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HypeNest -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+      <img src="picture/hnest.png" alt="HypeNest" class="project-img" />
+      <div class="project-info">
+        <h3>HypeNest</h3>
+        <p>HypeNest is a dedicated platform designed to empower small and underrepresented content creators like standup comedians by providing them a space to showcase their work.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <div class="project-links">
+          <a href="https://github.com/VanshNagpal18/HypeNest" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Glide-Gazer -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="220">
+       <img src="picture/glide.png" alt="Glide-Gazer" class="project-img" />
+      <div class="project-info">
+        <h3>Glide-Gazer</h3>
+        <p>It is a Python-based arcade game inspired by Flappy Bird, where players navigate a bird through a series of obstacles with simple, tap-to-fly mechanics, collision detection, and smooth player controls with custom game physics. </p>
+        <p><strong>Tech:</strong> Python, Pygame</p>
+        <div class="project-links">
+          <a href="https://github.com/VanshNagpal18/glide-gazer" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2 class="title">Get in Touch</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>9821917107</p>
+      </div>
+      <div class="contact-card">
+        <a href="mailto: vnagpal1811@gmail.com"><i class="fas fa-envelope"></i></a>
+        <h3>Email</h3>
+        <p>vnagpal1811@gmail.com</p>
+      </div>
+      <div class="contact-card">
+       <a href="https://www.google.com/maps/place/Dilshad+Garden,+Delhi/@28.6872606,77.2952107,14z/data=!3m1!4b1!4m6!3m5!1s0x390cfba65a4d9a59:0x92f186ee29e92ec0!8m2!3d28.6828082!4d77.3121354!16s%2Fm%2F03cwsdm?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-marker-alt"></i></a>
+        <h3>Address</h3> 
+        <p>Dilshad Garden, Delhi 110095</p>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit=" validateForm()" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="e2cba5f1-9ac3-4079-a3af-6ca3b0abfc07">
+      <input type="text" name="Name" placeholder="Name" id="name" required />
+      <input type="email" name="Email" placeholder="Email" id="email" required />
+      <input type="text" name="Subject" placeholder="Subject" id="subject" required />
+      <textarea name="Message" placeholder="Message"  id="message" required></textarea>
+      <button type="submit" class="btn btn-color-1">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Vansh Nagpal. All rights reserved.</p>
+  </footer>
+
+  <div class="own"><button id="scroll-top" title="Go to top">↑</button></div>
+  
+  <script src="scr.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
